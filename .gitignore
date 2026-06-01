@@ -1,0 +1,14 @@
+build/
+install/
+log/
+colcon.meta
+
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+venv/
+.venv/
+
+.vscode/
