@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from apriltag_perception.visualize_detections import main
+main()
