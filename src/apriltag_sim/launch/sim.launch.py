@@ -1,14 +1,3 @@
-"""
-sim.launch.py
-=============
-Simulation-only launch: Gz Harmonic world + TurtleBot3 Waffle.
-Does NOT spawn the AprilTag cube — that is an application-level concern
-owned by apriltag_bringup/full_system.launch.py.
-
-NVIDIA note: SetEnvironmentVariable actions enable Prime render-offload.
-Safe to leave in after `sudo prime-select nvidia`.
-"""
-
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -67,7 +56,7 @@ def generate_launch_description():
 
     # Delay spawn by 3 s to let the Gz server finish loading the world
     spawn_robot = TimerAction(
-        period=3.0,
+        period=5.0,
         actions=[
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
@@ -78,7 +67,7 @@ def generate_launch_description():
     )
 
     spawn_cube = TimerAction(
-    period=3.0,
+    period=5.0,
     actions=[
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(

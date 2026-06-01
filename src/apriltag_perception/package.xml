@@ -8,7 +8,7 @@
     AprilTag detection pipeline.
     Configures and launches apriltag_ros for the tag36h11 family.
   </description>
-  <maintainer email="arbazkhan5300@gmail.com.com">Arbaz</maintainer>
+  <maintainer email="arbazkhan5300@gmail.com">Arbaz</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

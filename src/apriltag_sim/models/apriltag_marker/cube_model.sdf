@@ -19,35 +19,35 @@
         <pose>0.1 0 0 0 0 0</pose>
         <geometry><box><size>0.001 0.2 0.2</size></box></geometry>
         <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
-          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042_800.png</albedo_map>
+          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042.png</albedo_map>
           <metalness>0.0</metalness><roughness>1.0</roughness></metal></pbr></material>
       </visual>
       <visual name="face_nx">
         <pose>-0.1 0 0 0 0 0</pose>
         <geometry><box><size>0.001 0.2 0.2</size></box></geometry>
         <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
-          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042_800.png</albedo_map>
+          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042.png</albedo_map>
           <metalness>0.0</metalness><roughness>1.0</roughness></metal></pbr></material>
       </visual>
       <visual name="face_py">
         <pose>0 0.1 0 0 0 0</pose>
         <geometry><box><size>0.2 0.001 0.2</size></box></geometry>
         <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
-          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042_800.png</albedo_map>
+          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042.png</albedo_map>
           <metalness>0.0</metalness><roughness>1.0</roughness></metal></pbr></material>
       </visual>
       <visual name="face_ny">
         <pose>0 -0.1 0 0 0 0</pose>
         <geometry><box><size>0.2 0.001 0.2</size></box></geometry>
         <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
-          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042_800.png</albedo_map>
+          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042.png</albedo_map>
           <metalness>0.0</metalness><roughness>1.0</roughness></metal></pbr></material>
       </visual>
       <visual name="face_pz">
         <pose>0 0 0.1 0 0 0</pose>
         <geometry><box><size>0.2 0.2 0.001</size></box></geometry>
         <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse><specular>0 0 0 1</specular>
-          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042_800.png</albedo_map>
+          <pbr><metal><albedo_map>model://apriltag_marker/materials/textures/tag36h11_00042.png</albedo_map>
           <metalness>0.0</metalness><roughness>1.0</roughness></metal></pbr></material>
       </visual>
     </link>
