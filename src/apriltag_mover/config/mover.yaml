@@ -1,0 +1,8 @@
+apriltag_mover:
+  ros__parameters:
+    use_sim_time: true
+    world_name: simple_world
+    model_name: apriltag_marker
+    bounds: 3.0
+    speed: 0.35
+    update_hz: 20.0
