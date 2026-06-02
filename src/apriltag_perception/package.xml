@@ -16,6 +16,8 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>apriltag_ros</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>apriltag_msgs</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

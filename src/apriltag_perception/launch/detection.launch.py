@@ -30,4 +30,23 @@ def generate_launch_description():
         output="screen",
     )
 
-    return LaunchDescription([relay, apriltag])
+    distance_visualizer = Node(
+    package="apriltag_perception",
+    executable="distance_visualizer",
+    name="distance_visualizer",
+    output="screen",
+    )
+    rviz_config = os.path.join(
+    get_package_share_directory("apriltag_perception"),
+    "config",
+    "visualize.rviz",
+)
+
+    rviz = Node(
+        package="rviz2",
+        executable="rviz2",
+        arguments=["-d", rviz_config],
+        output="screen",
+    )
+
+    return LaunchDescription([relay, apriltag, distance_visualizer, rviz])

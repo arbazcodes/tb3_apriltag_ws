@@ -2,13 +2,19 @@ cmake_minimum_required(VERSION 3.8)
 project(apriltag_perception)
 
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 
-install(DIRECTORY config launch
+ament_python_install_package(${PROJECT_NAME})
+
+install(
+  DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(PROGRAMS
-  scripts/camera_frame_relay
+install(
+  PROGRAMS
+    scripts/camera_frame_relay
+    scripts/distance_visualizer
   DESTINATION lib/${PROJECT_NAME}
 )
 
