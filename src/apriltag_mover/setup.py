@@ -13,9 +13,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/config', glob('config/*.yaml')),
         ('share/' + package_name + '/launch', glob('launch/*.py')),
-        # Install executable to lib/apriltag_mover/ for ros2 launch
-        ('lib/' + package_name, ['scripts/mover_node']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
+    tests_require=['pytest'],
 )
