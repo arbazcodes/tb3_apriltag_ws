@@ -5,4 +5,3 @@ apriltag_mover:
     model_name: apriltag_marker
     bounds: 5.0        # half width in meters
     speed: 0.15        # m/s base travel speed
-    update_hz: 20.0

@@ -58,7 +58,7 @@ Visualization Manager:
       Frames:
         All Enabled: false
         apriltag_42:
-          Value: true
+          Value: false
         base_footprint:
           Value: false
         base_link:
@@ -123,7 +123,9 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
+        apriltag: true
         distance: true
+        distance_arrow: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
