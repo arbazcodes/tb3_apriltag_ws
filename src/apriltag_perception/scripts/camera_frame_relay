@@ -17,9 +17,9 @@ apriltag_ros interprets poses in the wrong coordinate system and the detected ta
 
 This relay republishes Image and CameraInfo messages with: frame_id = camera_rgb_optical_frame
 
-It doesn't modifying any pixels, calibration values, or timestamps
-
 Only the frame label is changed so that apriltag_ros uses the correct camera coordinate convention
+
+
 """
 
 import copy
@@ -44,14 +44,23 @@ class CameraFrameRelay(Node):
         self.get_logger().info("Relaying camera topics with frame_id=camera_rgb_optical_frame")
 
     def on_image(self, msg: Image):
-        out = copy.deepcopy(msg)
+        out = Image()
+        out.header.stamp    = msg.header.stamp   # preserve original timestamp
         out.header.frame_id = TARGET_FRAME
+        out.height          = msg.height
+        out.width           = msg.width
+        out.encoding        = msg.encoding
+        out.is_bigendian    = msg.is_bigendian
+        out.step            = msg.step
+        out.data            = msg.data           # shared reference, not a copy
         self.image_pub.publish(out)
 
     def on_info(self, msg: CameraInfo):
-        out = copy.deepcopy(msg)
+        out = copy.copy(msg)
+        out.header = copy.copy(msg.header)
         out.header.frame_id = TARGET_FRAME
         self.info_pub.publish(out)
+
 
 
 def main(args=None):

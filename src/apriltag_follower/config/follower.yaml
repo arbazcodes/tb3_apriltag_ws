@@ -1,0 +1,33 @@
+apriltag_follower:
+  ros__parameters:
+
+    use_sim_time: true
+
+    # Detection
+    acquire_margin: 60.0
+
+    # Tag geometry
+    tag_size: 0.16
+    target_distance: 0.8
+
+    # Controller
+    k_linear: 1.0
+    k_angular: 1.2
+
+    # Velocity limits
+    max_linear_speed: 0.80
+    max_angular_speed: 1.0
+
+    # Search behaviour
+    search_turn_speed: 0.35
+
+    # Tracking
+    detection_timeout: 1.0
+
+    # Control loop
+    control_hz: 20.0
+
+    # Topics
+    camera_info_topic: "/camera/camera_info"
+    detections_topic: "/detections"
+    cmd_vel_topic: "/cmd_vel"

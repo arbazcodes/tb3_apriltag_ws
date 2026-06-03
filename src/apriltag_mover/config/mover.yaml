@@ -3,6 +3,6 @@ apriltag_mover:
     use_sim_time: true
     world_name: simple_world
     model_name: apriltag_marker
-    bounds: 3.0
-    speed: 0.35
+    bounds: 5.0        # half width in meters
+    speed: 0.15        # m/s base travel speed
     update_hz: 20.0
