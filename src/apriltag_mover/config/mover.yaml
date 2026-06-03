@@ -4,4 +4,4 @@ apriltag_mover:
     world_name: simple_world
     model_name: apriltag_marker
     bounds: 5.0        # half width in meters
-    speed: 0.15        # m/s base travel speed
+    speed: 0.1        # m/s base travel speed

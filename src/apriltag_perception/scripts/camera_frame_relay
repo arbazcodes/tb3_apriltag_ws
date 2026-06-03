@@ -13,7 +13,7 @@ x right
 y down
 z forward
 
-apriltag_ros interprets poses in the wrong coordinate system and the detected tag appears above the robot in RViz
+The detected tag appears above the robot in RViz
 
 This relay republishes Image and CameraInfo messages with: frame_id = camera_rgb_optical_frame
 

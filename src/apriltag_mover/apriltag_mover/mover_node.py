@@ -17,7 +17,7 @@ class AprilTagMover(Node):
         self.declare_parameter("world_name", "simple_world")
         self.declare_parameter("model_name", "apriltag_marker")
         self.declare_parameter("bounds", 3.0)
-        self.declare_parameter("speed", 0.35)
+        self.declare_parameter("speed", 0.1)
 
         self.world_name = self.get_parameter("world_name").value
         self.model_name = self.get_parameter("model_name").value

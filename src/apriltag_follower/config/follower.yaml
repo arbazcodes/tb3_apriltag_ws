@@ -13,11 +13,11 @@ apriltag_follower:
     angular_gain: 1.2
 
     # Speed limits
-    max_linear_speed: 0.22
-    max_angular_speed: 1.0
+    max_linear_speed: 0.25
+    max_angular_speed: 1.82
 
     # Turning speed while searching
-    search_turn_speed: 0.35
+    search_turn_speed: 0.5
 
     # Time before the tag is considered lost, s
     tracking_timeout: 1.0
